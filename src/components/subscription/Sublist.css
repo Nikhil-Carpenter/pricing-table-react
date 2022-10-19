@@ -1,0 +1,39 @@
+.toggle-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: lightgray;
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.toggle{
+    background-color: rgba(95,201,53,1);
+}
+.ball{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    width: 50%;
+    height: 80%;
+    background-color: #fff;
+    transition: all .2s linear;
+}
+.move{
+    transform: translateX(20px);
+}
+.sub-plans{
+    background-color: aliceblue;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+@media screen and (min-width:600px) {
+    .sub-plans{
+        flex-direction: row;
+        column-gap: 20px;
+    }
+}
